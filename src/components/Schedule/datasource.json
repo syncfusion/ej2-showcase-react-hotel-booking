@@ -1,0 +1,149 @@
+[
+  {
+    "Id": 1,
+    "Subject": "Events - Within a day",
+    "StartTime": "2018-05-01T10:00:00.000Z",
+    "EndTime": "2018-05-01T12:30:00.000Z",
+    "IsAllDay": false,
+    "FId": 1,
+    "HallId": 1,
+    "RoomId": 1,
+    "OwnerId": 1
+  },
+  {
+    "Id": 2,
+    "Subject": "Spanned Event - Less than 24",
+    "StartTime": "2018-04-30T18:00:00.000Z",
+    "EndTime": "2018-05-01T10:30:00.000Z",
+    "IsAllDay": false,
+    "FId": 2,
+    "HallId": 2,
+    "RoomId": 2,
+    "OwnerId": 2
+  },
+  {
+    "Id": 3,
+    "Subject": "Spanned Event - Greater than 24",
+    "StartTime": "2018-05-01T18:00:00.000Z",
+    "EndTime": "2018-05-03T10:30:00.000Z",
+    "IsAllDay": false,
+    "FId": 1,
+    "HallId": 1,
+    "RoomId": 1,
+    "OwnerId": 3
+  },
+  {
+    "Id": 4,
+    "Subject": "Spanned Event - Previous week",
+    "StartTime": "2018-04-27T15:00:00.000Z",
+    "EndTime": "2018-04-30T12:30:00.000Z",
+    "IsAllDay": false,
+    "FId": 1,
+    "HallId": 1,
+    "RoomId": 1,
+    "OwnerId": 4
+  },
+  {
+    "Id": 5,
+    "Subject": "Spanned  Event - Same week",
+    "StartTime": "2018-04-30T10:00:00.000Z",
+    "EndTime": "2018-05-03T13:00:00.000Z",
+    "IsAllDay": false,
+    "FId": 2,
+    "HallId": 2,
+    "RoomId": 2,
+    "OwnerId": 5
+  },
+  {
+    "Id": 6,
+    "Subject": "Spanned Event - Next week",
+    "StartTime": "2018-05-02T15:30:00.000Z",
+    "EndTime": "2018-05-08T18:00:00.000Z",
+    "IsAllDay": false,
+    "FId": 1,
+    "HallId": 1,
+    "RoomId": 1,
+    "OwnerId": 6
+  },
+  {
+    "Id": 7,
+    "Subject": "Recurrence Event - Previous week",
+    "StartTime": "2018-04-28T10:15:00.000Z",
+    "EndTime": "2018-05-01T11:45:00.000Z",
+    "RecurrenceRule": "FREQ=WEEKLY;BYDAY=SA;INTERVAL=1;COUNT=3",
+    "IsAllDay": false,
+    "FId": 1,
+    "HallId": 1,
+    "RoomId": 1,
+    "OwnerId": 7
+  },
+  {
+    "Id": 8,
+    "Subject": "All Day Event - Current date",
+    "StartTime": "2018-05-01T00:00:00.000Z",
+    "EndTime": "2018-05-02T00:00:00.000Z",
+    "IsAllDay": true,
+    "FId": 2,
+    "HallId": 2,
+    "RoomId": 2,
+    "OwnerId": 8
+  },
+  {
+    "Id": 9,
+    "Subject": "All Day Event - Previous week",
+    "StartTime": "2018-04-26T10:00:00.000Z",
+    "EndTime": "2018-04-30T11:30:00.000Z",
+    "IsAllDay": true,
+    "FId": 1,
+    "HallId": 1,
+    "RoomId": 1,
+    "OwnerId": 9
+  },
+  {
+    "Id": 10,
+    "Subject": "All Day Event - Next week",
+    "StartTime": "2018-05-04T10:00:00.000Z",
+    "EndTime": "2018-05-08T11:30:00.000Z",
+    "IsAllDay": true,
+    "FId": 1,
+    "HallId": 1,
+    "RoomId": 1,
+    "OwnerId": 10
+  },
+  {
+    "Id": 11,
+    "Subject": "Recurrence Event - Same day",
+    "StartTime": "2018-05-01T10:15:00.000Z",
+    "EndTime": "2018-05-01T14:45:00.000Z",
+    "RecurrenceRule": "FREQ=DAILY;INTERVAL=1;COUNT=3",
+    "IsAllDay": false,
+    "FId": 1,
+    "HallId": 1,
+    "RoomId": 1,
+    "OwnerId": 10
+  },
+  {
+    "Id": 12,
+    "Subject": "Recurrence Event - Less than 24",
+    "StartTime": "2018-05-03T15:00:00.000Z",
+    "EndTime": "2018-05-04T10:45:00.000Z",
+    "RecurrenceRule": "FREQ=DAILY;INTERVAL=1;COUNT=3",
+    "IsAllDay": false,
+    "FId": 2,
+    "HallId": 2,
+    "RoomId": 2,
+    "OwnerId": 5
+  },
+  {
+    "Id": 13,
+    "Subject": "Recurrence Event - Greater than 24",
+    "StartTime": "2018-04-30T15:00:00.000Z",
+    "EndTime": "2018-05-02T16:45:00.000Z",
+    "RecurrenceRule": "FREQ=WEEKLY;BYDAY=MO;INTERVAL=1;COUNT=3",
+    "IsAllDay": false,
+    "FId": 1,
+    "HallId": 1,
+    "RoomId": 1,
+    "OwnerId": 4
+  }
+]

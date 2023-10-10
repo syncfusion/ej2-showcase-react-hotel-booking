@@ -1,0 +1,9 @@
+.npmrc
+.vscode/
+.npmignore
+config.json
+gulpfile.js
+tsconfig.json
+node-modules/
+Jenkinsfile
+src/**/*.js

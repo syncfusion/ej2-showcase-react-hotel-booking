@@ -1,0 +1,7 @@
+.npmrc
+.vscode/
+node_modules/
+src/**/*.js
+dist/
+styles/*.*
+!styles/index.css
