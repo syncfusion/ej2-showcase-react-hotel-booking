@@ -1,0 +1,75 @@
+@import "@syncfusion/ej2-base/styles/tailwind.css";
+@import "@syncfusion/ej2-navigations/styles/tailwind.css";
+
+.e-sidebar.app-sidebar {
+  background-color: #fff;
+  position: relative;
+}
+
+.e-sidebar.app-sidebar .sidebar-header {
+  align-items: center;
+  display: none;
+  justify-content: space-between;
+  padding: 24px 24px 0;
+}
+
+.e-sidebar.app-sidebar .sidebar-header .sidebar-title {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.e-sidebar.app-sidebar .sidebar-header .sidebar-close .e-btn-icon {
+  line-height: 1;
+}
+
+.e-sidebar.app-sidebar .calendar-container {
+  border-bottom: 1px solid #e0f2fe;
+  padding: 24px;
+}
+
+.e-sidebar.app-sidebar .filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+
+.e-sidebar.app-sidebar .filter-container .filter-label {
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 500;
+  height: 20px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.app-sidebar-overlay {
+  background: #000;
+  display: none;
+  height: 100vh;
+  left: 0;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  transform: none !important;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media screen and (width <=1024px) {
+  .app-sidebar.e-sidebar {
+    position: absolute;
+    top: 0;
+    transition: none !important;
+    visibility: hidden;
+  }
+
+  .app-sidebar.e-sidebar .sidebar-header {
+    display: flex;
+  }
+
+  .app-sidebar-overlay.show {
+    display: block;
+  }
+}

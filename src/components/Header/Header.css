@@ -1,0 +1,114 @@
+@import "@syncfusion/ej2-base/styles/tailwind.css";
+@import "@syncfusion/ej2-buttons/styles/tailwind.css";
+@import "@syncfusion/ej2-inputs/styles/tailwind.css";
+
+.search-container .app-search .e-lib.e-input {
+  height: 32px;
+}
+
+.navigation-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-container .e-btn-group {
+  background: inherit;
+}
+
+.navigation-container .e-btn-group .e-btn {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.navigation-container .e-btn-group .e-btn[readonly] {
+  cursor: default;
+}
+
+.navigation-container .e-btn-group .e-btn-icon {
+  font-size: 24px;
+}
+
+.button-container {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.button-container .new-button {
+  width: 130px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #6f47ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.button-container .new-button span {
+  position: relative;
+  left: -5px;
+  bottom: 1px;
+}
+
+.button-container .new-button.e-btn:hover,
+.button-container .new-button.e-btn:focus {
+  background: #6f47ff;
+  color: #fff;
+}
+
+.button-container .new-button .e-device {
+  display: none;
+}
+
+.button-container .filter-button {
+  display: none;
+}
+
+@media screen and (width <=540px) {
+  .navigation-container .e-previous-button {
+    right: 2%;
+  }
+
+  .navigation-container .e-next-button {
+    right: 16%;
+  }
+}
+
+@media screen and (width <=640px) {
+  .button-container {
+    margin-bottom: 5px;
+  }
+
+  .button-container .new-button {
+    z-index: 1000;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 62px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .button-container .new-button span {
+    position: relative;
+    left: -1px;
+    bottom: 1px;
+  }
+}
+
+@media screen and (width <=1024px) {
+  .button-container .filter-button {
+    align-items: center;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    padding: 8px;
+  }
+}
