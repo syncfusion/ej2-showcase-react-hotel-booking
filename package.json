@@ -10,7 +10,6 @@
     "ci-publish": "gulp publish-sample"
   },
   "devDependencies": {
-    "@syncfusion/ej2-showcase-helper": "*",
     "@types/node": "^20.4.1",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
