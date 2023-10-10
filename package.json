@@ -6,8 +6,7 @@
   "license": "SEE LICENSE IN license",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production",
-    "ci-publish": "gulp publish-sample"
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@types/node": "^20.4.1",
