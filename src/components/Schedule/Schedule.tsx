@@ -239,7 +239,7 @@ const Schedule = (props: Record<string, any>): React.JSX.Element => {
   };
 
   const onFloorsChange = (args: ChangeEventArgs): void => {
-    roomsRef.current.query = new Query().where('groupId', 'equal', args.value);
+      roomsRef.current.query = new Query().where('groupId', 'equal', args.value as string | number);
     const rooms: Array<Record<string, any>> =
       scheduleObj.current?.getResourceCollections()[1].dataSource as any;
     const data = rooms.find(
@@ -292,8 +292,18 @@ const Schedule = (props: Record<string, any>): React.JSX.Element => {
       roomIndex,
     ) as ResourceDetails;
     const roomPrice: any = priceData?.resourceData?.price;
-    const checkInTime = setTime(new Date(data.CheckIn), 12*60*60*1000);
-    const checkOutTime = setTime(new Date(data.CheckOut), 12*60*60*1000);
+    const checkInTime = setTime(
+      data.CheckIn instanceof Date 
+        ? data.CheckIn 
+        : new Date(data.CheckIn as string | number), 
+      12*60*60*1000
+    );
+    const checkOutTime = setTime(
+      data.CheckOut instanceof Date 
+        ? data.CheckOut 
+        : new Date(data.CheckOut as string | number), 
+      12*60*60*1000
+    );
     const childCount: any = data.Child;
     const adultCount: number = data.Adults;
     return (
